@@ -32,10 +32,10 @@ export default {
 <style scoped>
 a {
   text-decoration: none;
-  color: black;
+  color: black !important;
 }
-a span {
-  color: #1572a1 !important;
+a >span {
+  color: #1572a1 ;
 }
 .container-nav-2,
 .container-nav-1,

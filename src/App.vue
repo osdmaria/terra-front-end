@@ -15,3 +15,12 @@ export default {
   }),
 };
 </script>
+
+
+<style scoped>
+#app{
+  font-family: 'Poppins', sans-serif;
+  padding: 0.5em 8em;
+}
+
+</style>
