@@ -4,28 +4,51 @@
          <div class="card-pic ">
 
           <div class="back-pic d-flex -justify-center px-16 ">
-          <img class="image" src="https://cdn.discordapp.com/attachments/833101375982272592/974806755336929300/Illustration_of_inscription.png" alt=""> 
+          <img class="image" src="https://media.discordapp.net/attachments/833101375982272592/974951931460071424/Questions-pana_1.png" alt=""> 
           </div>
          </div>
          <v-divider></v-divider>
             <div class="card-bot">
 
           <v-card-title>
-            <h2 class="title" >Okay , First what can i call you?</h2>
+            <h2 class="title" >Choose any chronical desease you have</h2>
           </v-card-title>
 
           <v-card-text >
-           <form class="form" action="">
-                <input  type="text" placeholder="Enter your username here..." v-model="username">
-                <button class="lightBlue px-10 py-3 rounded-lg white--text font-weight-medium btnUp" >Next</button>
-           </form>
+              <div class="buttons d-flex flex-column">
+
+            <v-btn
+                color="white"
+                dark
+                large
+                class="dispre"
+                >
+                diabete
+                </v-btn>
+            <v-btn
+                color="white"
+                dark
+                large
+                class="dispre"
+                >
+                Heart desiese
+                </v-btn>
+            <v-btn
+                color="white"
+                dark
+                large
+                class="dispre"
+                >
+                Insomnia
+                </v-btn>
+              </div>
           </v-card-text>
     </div>
         </v-card>
           
       </v-flex>
 </template>
-import Button from "@/components/Button.vue";
+
 <script>
 
 export default {
@@ -80,5 +103,11 @@ input{
 .btnUp{
     margin:10em 2em 0 16em ;
 }
-
+.dispre{
+    color: black !important;
+    width :30%;
+}
+.buttons{
+    justify-content: space-between;
+}
 </style>
