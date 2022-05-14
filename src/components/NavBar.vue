@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bigger-container">
     <div class="nav-container">
       <div>
         <img
@@ -36,6 +36,9 @@ a {
 }
 a >span {
   color: #1572a1 ;
+}
+.bigger-container{
+    padding: 0.5em 8em;
 }
 .container-nav-2,
 .container-nav-1,

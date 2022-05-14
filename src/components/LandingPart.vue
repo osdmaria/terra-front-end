@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bigger-container">
     <div class="d-flex flex-row justify-space-between pt-16">
       <div class="container-left pr-8 pt-16">
         <h1 >Unlock your full <span class="red--text">potential</span> with habito</h1>
@@ -55,5 +55,8 @@ p{
 }
 .container-right{
   width: fit-content;
+}
+.bigger-container{
+    padding: 0.5em 8em;
 }
 </style>
