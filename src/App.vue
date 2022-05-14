@@ -11,7 +11,6 @@ export default {
   name: "App",
 
   data: () => ({
-    //
   }),
 };
 </script>
@@ -20,7 +19,10 @@ export default {
 <style scoped>
 #app{
   font-family: 'Poppins', sans-serif;
-  padding: 0.5em 8em;
+
+}
+v-app{
+  align-items: center;
 }
 
 </style>

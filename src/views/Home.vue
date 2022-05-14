@@ -27,9 +27,15 @@
       </div>
 
     </div>
-    
-
     </div>
+    <div class="d-flex align-center flex-column mt-16">
+      <h1>Rewarding your efforts</h1>
+      <RewardSection />
+    </div>
+    <div class="d-flex align-center flex-column mt-16">
+      <FaQ />
+    </div>
+    <Footer />
   </div>
 </template>
 
@@ -38,6 +44,9 @@
 import NavBar from "@/components/NavBar.vue";
 import LandingPart from "@/components/LandingPart.vue";
 import Feature from "@/components/Feature.vue";
+import Footer from "@/components/Footer.vue"
+import RewardSection from "@/components/RewardSection.vue"
+import FaQ from "@/components/FaQ.vue"
 
 export default {
   name: "Home",
@@ -45,6 +54,9 @@ export default {
     NavBar,
     LandingPart,
     Feature,
+    Footer,
+    RewardSection,
+    FaQ,
   },
 };
 </script>
@@ -67,6 +79,5 @@ h1{
   background-image: url("https://media.discordapp.net/attachments/833101375982272592/974828776196296744/some_random_waves.png?width=1289&height=670");
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
 </style>
