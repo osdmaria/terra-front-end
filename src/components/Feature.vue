@@ -1,7 +1,7 @@
 <template>
     <div>
             <div class="card">
-                <img src={{source}}>
+                <img :src="source">
                 <h4>{{title}}</h4>
                 <p>{{paragraph}}</p>
             </div>
@@ -10,9 +10,9 @@
 
 <script>
 export default {
-    components:{
-        Feature,
-    },
+    name: "Feature",
+
+    
     props:{
         source: String,
         title: String,
