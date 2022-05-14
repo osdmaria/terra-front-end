@@ -8,15 +8,15 @@
         />
       </div>
       <div class="container-nav-1">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Features</a>
-        <a href="">FAQ</a>
+        <a>Home</a>
+        <a>About</a>
+        <a>Features</a>
+        <a>FAQ</a>
       </div>
       <div class="container-nav-2">
-        <a href="">Login</a>
+        <a>Login</a>
         |
-        <a href=""><span>Sign-up</span></a>
+        <a><span>Sign-up</span></a>
       </div>
     </div>
   </div>
@@ -34,8 +34,8 @@ a {
   text-decoration: none;
   color: black !important;
 }
-a >span {
-  color: #1572a1 ;
+a > span {
+  color: #1572a1;
 }
 .container-nav-2,
 .container-nav-1,

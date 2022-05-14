@@ -1,7 +1,9 @@
 <template>
   <v-app>
     <v-main>
-      <router-view />
+      <router-view class="view left-sidebar" name="left"></router-view>
+      <router-view class="view main-content"></router-view>
+      <!-- <router-view class="view right-sidebar" name="RightSidebar"></router-view> -->
     </v-main>
   </v-app>
 </template>
@@ -16,11 +18,8 @@ export default {
 };
 </script>
 
-
 <style scoped>
-#app{
-  font-family: 'Poppins', sans-serif;
-  padding: 0.5em 8em;
+#app {
+  font-family: "Poppins", sans-serif;
 }
-
 </style>
