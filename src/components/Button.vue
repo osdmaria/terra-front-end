@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: "NavBar",
+    name: "Button",
   props: {
       "text": String,
   }
