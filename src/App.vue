@@ -12,14 +12,15 @@
 export default {
   name: "App",
 
-  data: () => ({
-    //
-  }),
+  data: () => ({}),
 };
 </script>
 
 <style scoped>
 #app {
   font-family: "Poppins", sans-serif;
+}
+v-app {
+  align-items: center;
 }
 </style>
