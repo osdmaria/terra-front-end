@@ -8,16 +8,18 @@
       <v-row>
         <v-col>
           <h3>Progress</h3>
-          <Bar :chart-data="chartData" height="40%" width="35%" />
+          <Bar :chart-data="chartData" :chart-options="chartOptions" />
         </v-col>
       </v-row>
       <v-row>
         <v-col>
-          <Line :chart-data="chartData3" />
+          <p>line</p>
         </v-col>
       </v-row>
     </v-container>
-    <Doughnut :chart-data="chartData2" />
+    <p>Doughnut</p>
+    <Doughnut :chart-data="chartData2" :chart-options="chartOptions" />
+    <Line :chart-data="chartData3" :chart-options="chartOptions" />
   </v-container>
 </template>
 
@@ -31,6 +33,9 @@ import {
   BarElement,
   CategoryScale,
   LinearScale,
+  ArcElement,
+  PointElement,
+  LineElement,
 } from "chart.js";
 ChartJS.register(
   Title,
@@ -38,7 +43,10 @@ ChartJS.register(
   Legend,
   BarElement,
   CategoryScale,
-  LinearScale
+  LinearScale,
+  ArcElement,
+  LineElement,
+  PointElement
 );
 
 export default {
@@ -65,7 +73,6 @@ export default {
         labels: ["Completed", "In progress"],
         datasets: [
           {
-            label: "Data One",
             backgroundColor: ["#E3BEC6", "#1572A1"],
             data: [65, 35],
           },
@@ -77,12 +84,15 @@ export default {
         datasets: [
           {
             label: "My First Dataset",
-            data: [65, 59, 80, 81, 56, 55, 40],
-            fill: false,
+            data: [65, 59, 80],
             borderColor: "rgb(75, 192, 192)",
-            tension: 0.1,
+            backgroundColor: "#f87979",
           },
         ],
+      },
+      chartOptions: {
+        responsive: true,
+        maintainAspectRatio: false,
       },
     };
   },
