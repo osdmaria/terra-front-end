@@ -1,6 +1,6 @@
 <template>
   <v-containter tag="Dashboard" class="d-flex justify-space-between">
-    <v-card height="1600" width="256">
+    <v-card height="1200" width="256">
       <v-navigation-drawer permanent bottom>
         <v-list-item>
           <v-list-item-content>

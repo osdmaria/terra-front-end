@@ -28,7 +28,6 @@
       </div>
 
     </div>
-    </div>
     <div class="d-flex align-center flex-column mt-16">
       <h1>Rewarding your efforts</h1>
       <RewardSection />

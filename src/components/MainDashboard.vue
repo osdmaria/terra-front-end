@@ -12,12 +12,8 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col>
-          <p>line</p>
-        </v-col>
       </v-row>
     </v-container>
-    <p>Doughnut</p>
     <Doughnut :chart-data="chartData2" :chart-options="chartOptions" />
     <Line :chart-data="chartData3" :chart-options="chartOptions" />
   </v-container>
