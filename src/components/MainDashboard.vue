@@ -1,8 +1,8 @@
 <template>
   <v-container tag="main-dashboard">
     <v-container tag="text-container">
-      <h1>Daily Activity</h1>
-      <p>Visualize all your health data here</p>
+      <h1  class="pl-13 pr-13">Daily Activity</h1>
+      <p  class="pl-13 pr-13">Visualize all your health data here</p>
     </v-container>
     <v-container tag="plots-container">
       <v-row>

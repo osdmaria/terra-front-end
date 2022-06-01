@@ -1,35 +1,36 @@
 <template>
   <v-containter tag="Dashboard" class="d-flex justify-space-between">
-    <v-card height="1200" width="256">
+    <v-card height="auto" width="256" class=" white">
       <v-navigation-drawer permanent bottom>
         <v-list-item>
           <v-list-item-content>
-            <img src="../assets/logo.svg" alt="" srcset="" />
+            <img src="../assets/logo.svg" alt="" />
           </v-list-item-content>
         </v-list-item>
 
         <v-list class="pa-6 mt-10 darkBlue--text" dense nav>
           <v-list-item
             v-for="item in items"
-            :key="item.title"
+            :key="item"
             class="mb-5"
             link
             selectable
             tag="dash-btns"
+            @click="changeActive(item.component)"
           >
             <v-list-item-icon>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-icon>
 
-            <v-list-item-content @onClick="changeActive">
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item-content>
+              <v-list-item-title >{{ item.title }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
     </v-card>
     <v-container>
-      <main-dashboard v-show="this.active == 'dashboard'" />
+      <MainDashboard v-show="this.active == 'dashboard'"/>
       <Habits v-show="this.active == 'habits'" />
       <Rewards v-show="this.active == 'rewards'" />
     </v-container>
@@ -71,6 +72,7 @@ export default {
   },
   methods: {
     changeActive(component) {
+      console.log('hi');
       console.log(component);
       this.active = component;
     },
@@ -82,4 +84,9 @@ export default {
 .rightSide {
   width: fit-content;
 }
+
+.v-main{
+  background-color:#F7F8FA;
+}
+
 </style>

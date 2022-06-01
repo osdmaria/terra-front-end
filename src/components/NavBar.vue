@@ -16,7 +16,7 @@
       <div class="container-nav-2">
         <a>Login</a>
         |
-        <a><span>Sign-up</span></a>
+        <router-link to="/signup" class="darkBlue--text">Sign Up</router-link>
       </div>
     </div>
   </div>

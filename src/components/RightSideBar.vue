@@ -1,6 +1,6 @@
 <template>
   <v-container tag="right-sidebar" width="100%">
-    <v-card height="1200" width="100%">
+    <v-card height="auto" width="100%" elevation="0" >
       <v-navigation-drawer permanent bottom>
         <v-list-item>
           <v-list-item-content>
@@ -18,11 +18,11 @@
             <v-container tag="notifications">
               <h1>Notifications</h1>
               <v-container >
-                <v-container class="beige rounded-r-xl mb-2">
-                  <p>Your blood sugar level was hih today, you should approach a doctor asap</p>
+                <v-container class="lightGrey rounded mb-2">
+                  <p class="notif red--text">Your blood sugar level was hih today, you should approach a doctor asap</p>
                 </v-container>
-                <v-container class="beige rounded-r-xl">
-                  <p>This is the second notification I just hope this shows up well</p>
+                <v-container class="lightGrey rounded">
+                  <p class="notif red--text">This is the second notification I just hope this shows up well</p>
                 </v-container>
               </v-container>
             </v-container>
@@ -47,4 +47,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+  .notif{
+    font-size: 12px;
+    margin: 0 !important;
+  }
+</style>

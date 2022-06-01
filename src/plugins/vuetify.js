@@ -12,6 +12,7 @@ export default new Vuetify({
             beige: "#EFDAD7",
             pink:"#E3BEC6",
             red  :"#EA7068",
+            lightGrey:"F7F8FA",
       },
     }
   }

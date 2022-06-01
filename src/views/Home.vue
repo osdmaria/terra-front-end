@@ -62,9 +62,7 @@ export default {
 </script>
 
 <style scoped>
-.home {
-  padding: 0.5em 8em;
-}
+
 
 h1 {
   font-size: 40px;

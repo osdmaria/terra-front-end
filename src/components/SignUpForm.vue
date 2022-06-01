@@ -53,12 +53,12 @@
                               <div>
                                 <div class="team-container">
                                   <span>important:</span> 
-                                  <p> It is important for us to know if you're suffering from any form of chronical disease.
+                                  <p> It is important for us to know if you're suffering from any form of chronic disease.
                                   </p>
                                 </div>
                                 
                                 <div class=" pt-5 pb-5 ">
-                                  <h5 class="ml-2 pb-4">Do you suffer from any chronical disease?</h5>
+                                  <h5 class="ml-2 pb-4">Do you suffer from any chronic disease?</h5>
                                   <div class=" d-flex yes-no-container">
                                     <div>
                                       <input @click="click2(show1)" type="radio" name="decision" value="Yes" id="Yes" class="mr-3 ml-4" >
@@ -139,9 +139,10 @@
                             color="lightBlue" 
                             @click="done()"
                             class="pt-5 pb-5 pr-12 pl-12 rounded-pill mt-6 "
-                            >Let's start!
+                            ><router-link to="/dashboard" class="black--text">let's start</router-link>
                           </v-btn>
                           </div>
+                          
                           
                           </v-card>
                           <div class=" d-flex button-container hide-too">
@@ -169,8 +170,9 @@
                             color="lightBlue" 
                             @click="done()"
                             class="pt-5 pb-5 pr-12 pl-12 rounded-pill mt-6 btn"
-                            >Let's Start!
+                            ><router-link to="/dashboard" class="black--text">let's start</router-link>
                           </v-btn>
+                           
                           </div>
 
                         </v-stepper-content>
